@@ -73,7 +73,7 @@ function removeFromCart(item) {
     }
   }
 if (item == cart[placement].itemName) {
-    delete cart[placement]
+    cart.splice(placement,1)
   } else {
     return `That item is not in your cart.`
   }
