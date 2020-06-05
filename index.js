@@ -62,7 +62,7 @@ function removeFromCart(item) {
   var i = 0
   var placement = 0
   if (cart[0] == undefined) {
-  return `That is not in your cart.`
+  return `That item is not in your cart.`
   } else
   while (i < cart.length) {
     if (cart[i].itemName == item) {
@@ -75,7 +75,7 @@ function removeFromCart(item) {
 if (item == cart[placement].itemName) {
     delete cart[placement]
   } else {
-    return `That is not in your cart.`
+    return `That item is not in your cart.`
   }
 }
 
