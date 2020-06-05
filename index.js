@@ -68,11 +68,11 @@ function removeFromCart(item) {
     } else {
       i = i + 1
     }
-    if (item == cart[placement].itemName) {
-      cart[placement] = ''
-    } else {
-      return `That is not in your cart.`
-    }
+  }
+  if (item == cart[placement].itemName) {
+    cart[placement] = ''
+  } else {
+    return `That is not in your cart.`
   }
 }
 
