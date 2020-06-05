@@ -70,7 +70,7 @@ function removeFromCart(item) {
     }
   }
   if (item == cart[placement].itemName) {
-    //delete from array
+    delete cart[placement]
   } else {
     return `That is not in your cart.`
   }
